@@ -1,5 +1,5 @@
 <?php
-include("pageheader.html");
+include("pageheader.php");
 ?>
 <html>
 <body id="namonekar">
@@ -12,6 +12,7 @@ include("pageheader.html");
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <style>
         body {
     font-family: Tahoma, sans-serif;
@@ -41,6 +42,9 @@ header {
     align-items: center;
     padding: 50px;
 }
+#hh{
+color:#34495e;
+}
 
 .project {
     background-color: #333;
@@ -68,9 +72,13 @@ header {
     text-decoration: none;
     border-radius: 5px;
 }
+.project{
+    color: #34495e;
+}
+   
     </style>
     <header>
-        <h2>برخی از نمونه کارهای ما</h2>
+        <h2 id="hh">برخی از نمونه کارهای ما</h2>
         <p>خلاقیت و کیفیت را با ما تجربه کنید.</p>
     </header>
     <section class="portfolio">
@@ -79,7 +87,7 @@ header {
             <p>وب سایت مرکز رشد فناوری اطلاعات و ارتباطات جهاد دانشگاهی (رویش) متناسب با رویکرد و اهداف مجموعه طراحی گردیده‌ است.
 
 این سایت به صورت تک زبانه و در بستر وردپرس به صورت اختصاصی پیاده‌سازی شده است.</p>
-            <p>مدت زمان انجام پروژه: ۶ روز کاری</p>
+            <p>مدت زمان انجام پروژه: 17 روز کاری</p>
             <a href="https://rooyesh.ir/">مشاهده پروژه</a>
         </div>
     </section>
@@ -88,7 +96,7 @@ header {
         <div class="project">
             <h3>دانشگاه</h3>
             <p>وب سایت دانشکده فنی فومن دانشگاه تهران به صورت دو زبانه و با استفاده از پورتال لایفری مخصوص دانشگاه تهران طراحی شده است. علاوه بر طراحی سایت خدمات عکس برداری و ادیت عکسها و تولید محتوا نیز انجام شده است.</p>
-            <p>مدت زمان انجام پروژه: ۲۶ روز کاری</p>
+            <p>مدت زمان انجام پروژه: 28 روز کاری</p>
             <a href="https://ffeng.ut.ac.ir/">مشاهده پروژه</a>
         </div>
     </section>
@@ -98,7 +106,7 @@ header {
         <div class="project">
             <h3>شرکت همیار بتن شیرکوه</h3>
             <p>سایت شرکت همیار بتن شیرکوه در بستر وردپرس و چند زبانه دارای انواع بخش‌های محصولات، خدمات، دپارتمان و پروژه‌ها</p>
-            <p>مدت زمان انجام پروژه: ۲۶ روز کاری</p>
+            <p>مدت زمان انجام پروژه: 34 روز کاری</p>
             <a href="https://hbscoo.com/">مشاهده پروژه</a>
         </div>
     </section>

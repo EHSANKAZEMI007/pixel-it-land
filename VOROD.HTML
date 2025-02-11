@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود</title>
+</head>
+<body>
+    <STyle>
+        *{
+            margin: 0%;
+            padding: 0%;
+            border: 0cap;
+        }
+      body{
+        font-family:'B Nazanin';
+        direction: rtl;
+        background-color: #38ada9;
+      }
+      ::placeholder,input{
+        font-family: 'B Nazanin';
+      }
+      .login{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+      }
+      .login h1 {
+        color:rgb(255, 255, 255);
+        margin: 20px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid gray ;
+        font-size: 25px;
+        transition: 0.8s;
+      }
+      .login h1:hover{
+        border-color: #ffffff;
+        font-size: 30px;
+
+      }
+      .login input[type="text"],input[type=password]{
+        margin: 20px;
+        padding: 10px 14px;
+        width: 250px;
+        border-radius: 24px;
+        border: 1px solid #0c2461 ;
+        transition: 0.5s;
+      }
+      .login input[type="submit"]{
+        margin: 20px;
+        padding: 10px 14px;
+        width: 100px;
+        background-color: #ffffff;
+        cursor: pointer;
+        border-radius: 24px;
+        border: 1px solid #0c2461 ;
+        transition: 0.7s ;
+      }
+      .login input[type="submit"]:hover{
+        background-color: #3c6382;
+        color: #ffffff;
+
+      }
+      label{
+        color: #ffffff; 
+      }
+      .login input[type="text"]:focus ,input[type=password]:focus{
+            width: 300px;
+      }
+      #f{
+     
+        text-decoration:none;
+
+      }
+
+    </STyle>
+    <form method="post" action="seiv.php" class="login">
+        <h1>صفحه ورود</h1>
+        <input type="text" name="asmcarbr" placeholder="نام کاربری">
+        <input type="text" name="Telephone" placeholder="شماره تلفن">
+        <input type="password" name="password" placeholder="رمز عبور">
+        <span>
+
+            <input type="checkbox" id="rememberme" >
+            <label for="rememberme">مرا به خواطر بسپار</label>
+            <p></p>
+            <a href="#" id="f">رمزعبور را فراموش کردید؟</a>
+
+        </span>
+        <input type="submit" value="ورود" >
+
+
+    </form>
+    
+
+
+    
+</body>
+</html> 

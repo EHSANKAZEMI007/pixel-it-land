@@ -1,5 +1,5 @@
 <?php
-include("pageheader.html")
+include("pageheader.php")
 ?>
 <div class="container2">
 
@@ -85,6 +85,7 @@ include("pageheader.html")
         </div>
     </div>
     </div>
+    
 </body>
 </html>
 

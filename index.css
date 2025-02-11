@@ -1,5 +1,6 @@
+/*  */
 body, html {
-    margin: 50;
+    margin: 20px;
     padding: 0;
     min-height: 100vh;
     display: flex;
@@ -7,7 +8,7 @@ body, html {
     direction: rtl;
     text-align: right;
     background-color: rgb(221, 217, 222);
-    font-family: b Nazanin;
+    font-family: "B Nazanin";
 }
 
 #hedr {
@@ -18,19 +19,17 @@ body, html {
     display: flex;
     flex-grow: 1;
     justify-content: space-around;
-    
-
 }
 
 #main {
     display: flex;
-    justify-content: space-between; /* فاصله مساوی بین آیتم‌ها */
+    justify-content: space-between;
     padding: 10px;
     background-color: #9d9d9d;
 }
 
 .title {
-    flex: 1; /* عرض مساوی برای هر بخش */
+    flex: 1;
     margin: 5px;
     padding: 10px;
     background-color: rgb(55, 84, 84);
@@ -44,124 +43,116 @@ footer {
     background-color: #183257;
     text-align: center;
     padding: 5px;
-    font-size: 12px;
-    color: rgb(54, 41, 41);
     font-size: 2em;
+    color: rgb(54, 41, 41);
 }
-.container{
+
+.container {
     display: flex;
-    justify-content: space-between; /* فاصله مساوی بین باکس‌ها */
+    justify-content: space-between;
     padding: 20px;
     background-color: #8c8d9a6e;
-    
-
 }
 
 .flex-item {
-    
-    
     margin: 5px;
     padding: 20px;
-    background-color: #e1a201; /* رنگ پس‌زمینه باکس */
+    background-color: #e1a201;
     color: rgb(72, 78, 106);
     text-align: center;
     font-size: 4em;
-    text-align: center;
-    flex-direction: row;
     flex-direction: column;
-    font-family:  b Nazanin;
+    font-family: "B Nazanin";
 }
-#fot{
+
+#fot {
     font-size: 2em;
-    font-family:  b Nazanin;
+    font-family: "B Nazanin";
 }
-#fi1{
+
+#fi1 {
     border-color: #97510a;
 }
-#fi2{
+
+#fi2 {
     border-color: aliceblue;
 }
-.ulp{
-    list-style-type:none ;
+
+.ulp {
+    list-style-type: none;
     border-color: #06c70d;
     display: flex;
     font-size: 28px;
-    font-family: b Nazanin;
+    font-family: "B Nazanin";
     padding: 0;
-    
 }
-.ulp li{
+
+.ulp li {
     flex-grow: 1;
-    border-bottom: 7px black solid ;
+    border-bottom: 7px solid black;
 }
-a{
+
+a {
     text-decoration: none;
     color: #333;
     display: block;
     text-align: center;
-
-
 }
-.ulp a:hover{
-    background-color:#333;
+
+.ulp a:hover {
+    background-color: #333;
     color: #2ffa2f;
+}
 
+.container2 {
+    background: url(1.jpg) no-repeat center center/cover;
 }
-.container2{
-    background:url(1.jpg) 
-    
-    /* background-color: #e1a201; */
-        
-}
-.container2{
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    
-}
-#hedr img{
+
+#hedr img {
     width: 200px;
     height: 100px;
 }
-.container3{
-  font-family: Arial, sans-serif;
-  direction: rtl;
-  text-align: right;
-  background-color: #f9f9f9;
-  margin:0 ;
-  padding: 20px;
-  
-}
+
 .container3 {
-  width: 90%;
-  max-width: 600px;
-  margin: 50px auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-size: 2em;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 2em;
 }
+
 .comment {
-  margin-bottom: 20px;
-  padding: 15px;
-  border-bottom: 1px solid #ddd;
-  
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
 }
+
 .comment:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
+
 .comment p {
-  margin: 0;
-  font-size: 22px;
-  color: #555;
+    margin: 0;
+    font-size: 22px;
+    color: #555;
 }
+
 .comment span {
-  display: block;
-  margin-top: 5px;
-  font-size: 14px;
-  color: #888;
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #888;
 }
-  /* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     direction: rtl;
@@ -204,22 +195,25 @@ h3 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.6;
-    color: #4a3f3f;
+    color: #2a1e1e;
+    font-family: 'B Nazanin';
 }
-#kh{
-    color: #89b71d;
+.project{
+    color: #34495e;
+}
+
+#kh {
+    color: #6c0909;
     font-size: 30px;
 }
-#fot p{
+
+#fot p {
     font-size: 1em;
     color: #8db822;
-
 }
-.namonekar{
+
+.namonekar {
     background-color: #333;
 }
-
-
-    
