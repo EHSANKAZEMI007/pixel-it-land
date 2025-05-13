@@ -1,47 +1,34 @@
 <?php
-include("pageheader.php");?>
+include("pageheader.php");
+
+?>
 <!-- ************************* -->
 
 <div class="container">
 
     <?php
 
-    $username = $_POST["username"];
+$username=$_POST["username"];
+$password=$_POST["password"];
 
-    $pass = $_POST["pass"];
-
-
-
-    $o = mysqli_connect("localhost", "root", "", "picxel it");
-    $r = mysqli_query($o, "SELECT * FROM `login` WHERE user nam ='$username' and pass ='$pass' ");
-
-    mysqli_close($o);
-
-    $row = mysqli_fetch_array($r);
-
-    if ($row) {
-        $_SESSION["login"] = true;
-
+include("conect.php");
+$result=mysqli_query($link,"SELECT * FROM `login` 
+    WHERE `user nam`='$username' AND `pass`='$password'");
+mysqli_close($link);
+$row=mysqli_fetch_array($result);
+if($row){
+    $_SESSION["login"]=true;
+    $_SESSION["admin"]=$row["admin"];
     ?>
-        <script>
-            alert("ورود به حساب با موفقیت انجام شد");
-            location.replace("index.php");
-        </script>
+    <script>
+        alert("ورود انجام شد");
+        location.replace("index.php");
+    </script>
     <?php
-    } else {
-    ?>
-        <script>
-            alert("ورود به حساب با موفقیت انجام نشد");
-            location.replace("index.php");
-        </script>
-    <?php
-    }
-
-
-
-
-
-    ?>
+}else{
+    echo("نام کاربری یا رمز عبور صحیح نیست");
+}
+?>
 </div>
 
 <!-- ************************* -->

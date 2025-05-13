@@ -1,6 +1,6 @@
 /*  */
 body, html {
-    margin: 20px;
+    /* margin: 20px; */
     padding: 0;
     min-height: 100vh;
     display: flex;
@@ -15,9 +15,9 @@ body, html {
     background-color: #06c70d;
     padding: 10px;
     text-align: center;
-    font-size: 2em;
+    /* font-size: 2em; */
     display: flex;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     justify-content: space-around;
 }
 
@@ -187,6 +187,10 @@ body {
     height: 50px;
     margin-bottom: 15px;
 }
+#hed{
+    color: rgb(27, 126, 101);
+    font-size: 2em;
+}
 
 h3 {
     font-size: 18px;
@@ -197,7 +201,7 @@ h3 {
 p {
     font-size: 20px;
     line-height: 1.6;
-    color: #2a1e1e;
+    color: #00885b;
     font-family: 'B Nazanin';
 }
 .project{
@@ -217,3 +221,12 @@ p {
 .namonekar {
     background-color: #333;
 }
+nav{
+    font-size: px;
+}
+#hed{
+    font-size:4.5em;
+}
+@media screen And
+
+

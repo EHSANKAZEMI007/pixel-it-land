@@ -11,10 +11,11 @@
 $username = $_POST["asmcarbr"];
 $phone = $_POST["Telephone"];
 $pass = $_POST["password"];
-$o=mysqli_connect("localhost","root","","picxel it");
-mysqli_query($o,"INSERT INTO `login`(`user nam`, `phone`, `pass`) VALUES ('$username','$phone','$pass')");
-mysqli_close($o);
-if ($o=true)
+include("conect.php");
+
+mysqli_query($link,"INSERT INTO `login`(`user nam`, `phone`, `pass`) VALUES ('$username','$phone','$pass')");
+mysqli_close($link);
+if ($link=true)
 {
     ?>
     <script>
@@ -37,30 +38,7 @@ else
 
 
 
-    // $servername="localhost";
-    // $USERNAME="root";
-    // $password="";
-    // $dbname="sait";
-    
-
-    // $usname=$_POST['asmcarbr'];
-    // $phone=$_POST['Telephone'];
-    // $PAS=$_POST['password'];
-
-    // $conn=new mysqli($servername,$USERNAME,$password,$dbname);
-
-    // if ($conn->connect_errno) 
-    // {
-    //     die("خطایی در اتصال به پایگاه داده رخ داده است");
-    // }
-    // $conn->set_charset("utf8");
-    // $sql="INSERT INTO `form login`( `user nam`, `phone`, `pas`) VALUES ('$asmcarbr','$Telephone','$password')";
-    // if($conn->puery($sql)===true){echo "اطلاعات با موفقیت ذخیره شد ";
-    // }else{echo "خطایی در ذخیره اطلاعات رخ داده است ";}
-    
- 
-    // $conn->class();
-
+  
     ?>
 
 

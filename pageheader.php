@@ -15,9 +15,9 @@ session_start();
 
 
     <div  id="hedr">
-        <h1>آغاز یک همکاری ابدی
+        <h1 id="hed">آغاز یک همکاری ابدی
             با خلق یک شاهکار ماندگار دیجیتال</h1>
-        <div><img src="loogo.png" alt="لوگو"></div>
+        <div><img src="loogo.png" ></div>
         
     </div>
     <nav>
@@ -25,31 +25,27 @@ session_start();
 
             <li><a href="index.php">صفحه اصلی</a></li>
             <li><a href="namonekar.php">نمونه کارها</a></li>
-            <li><a href="Contact us.php">تماس با ما </a></li>
-            <li><a href="Cooperate with us.php">همکاری با ما</a</li>
+            
+            
+            <li><a href="Cooperate with us.php">وبلاگ</a</li>
             <li><a href="product.php">خدمات</a</li>
-            <li><a href="VOROD.HTML">ثبت نام</a></li>
-            <?php
+           
+            <?php if(isset($_SESSION["login"]) && $_SESSION["login"]==true){ ?>
+                <li><a href="logout.php">خروج</a></li>
+            <?php }
+            else{ ?>
+                <li><a href="VOROD.HTML">ثبت نام</a></li>
+                <li><a href="login.html">ورود</a></li>
 
-if(isset($_SESSION["login"]))
-{
-?>
-    <li><a class="aok" href="logout.php">خروج از حساب </a></li>
-    
-<?php
-}
+               
+            <?php } ?>
 
-else
-{
-?>
-    <li><a class="aok" href="login1.php">ورود به حساب کاربری</a></li>
-<?php
-}
-?>
+            <?php if(isset($_SESSION["admin"]) && $_SESSION["admin"]==true){ ?>
+                    <li><a href="admin.php">ادمین</a></li>
+            <?php } ?>
+          
 
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            
         </ul>
     </nav>
 

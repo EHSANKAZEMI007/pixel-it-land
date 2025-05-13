@@ -1,15 +1,14 @@
 <?php
+
 include("pageheader.php");
-unset($_SESSION["login"]);
-
 ?>
-            <!-- ************************* -->
-            
-            <script>
-    location.replace("index.php") 
-    </script>
-
-            <!-- ************************* -->
+<?php
+unset($_SESSION["login"]);
+unset($_SESSION["admin"]);
+?>
+<script>
+    location.replace("index.php");
+</script>
 <?php
 include("pagefooter.html");
 ?>

@@ -25,7 +25,7 @@ body {
     font-family: Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #007bff; /* Blue background */
+    background-color:rgb(255, 255, 255); /* Blue background */
     color: #fff; /* White text */
 }
 
@@ -43,7 +43,7 @@ header {
     padding: 50px;
 }
 #hh{
-color:#34495e;
+color:rgb(31, 178, 189);
 }
 
 .project {
@@ -66,7 +66,7 @@ color:#34495e;
 
 .project a {
     display: inline-block;
-    background-color: #007bff;
+    /* background-color:rgb(12, 56, 103); */
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -75,6 +75,66 @@ color:#34495e;
 .project{
     color: #34495e;
 }
+
+/* From Uiverse.io by cssbuttons-io */ 
+button {
+  font-size: 17px;
+  padding: 1em 2.7em;
+  font-weight: 500;
+  background: #1f2937;
+  color: white;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.6em;
+  cursor: pointer;
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 0.6em;
+  margin-top: -0.25em;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3)
+  );
+}
+
+.label {
+  position: relative;
+  top: -1px;
+}
+
+.transition {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 500ms;
+  background-color: rgba(16, 185, 129, 0.6);
+  border-radius: 9999px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button:hover .transition {
+  width: 14em;
+  height: 14em;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+a {
+    size: 20px 10px;
+}
+
    
     </style>
     <header>
@@ -88,7 +148,15 @@ color:#34495e;
 
 این سایت به صورت تک زبانه و در بستر وردپرس به صورت اختصاصی پیاده‌سازی شده است.</p>
             <p>مدت زمان انجام پروژه: 17 روز کاری</p>
-            <a href="https://rooyesh.ir/">مشاهده پروژه</a>
+            <form action="https://rooyesh.ir/">
+    <button>
+مشاهده پروژه
+  <span class="transition"></span>
+  <span class="gradient"></span>
+  <span class="label"></span>
+
+</button>
+           
         </div>
     </section>
     </style>
@@ -97,17 +165,36 @@ color:#34495e;
             <h3>دانشگاه</h3>
             <p>وب سایت دانشکده فنی فومن دانشگاه تهران به صورت دو زبانه و با استفاده از پورتال لایفری مخصوص دانشگاه تهران طراحی شده است. علاوه بر طراحی سایت خدمات عکس برداری و ادیت عکسها و تولید محتوا نیز انجام شده است.</p>
             <p>مدت زمان انجام پروژه: 28 روز کاری</p>
-            <a href="https://ffeng.ut.ac.ir/">مشاهده پروژه</a>
+            <form action="https://ffeng.ut.ac.ir/">
+    <button>
+مشاهده پروژه
+  <span class="transition"></span>
+  <span class="gradient"></span>
+  <span class="label"></span>
+
+</button>
+           
         </div>
     </section>
     </section>
     </style>
     <section class="portfolio">
         <div class="project">
-            <h3>شرکت همیار بتن شیرکوه</h3>
+            <h4>شرکت همیار بتن شیرکوه</h4>
             <p>سایت شرکت همیار بتن شیرکوه در بستر وردپرس و چند زبانه دارای انواع بخش‌های محصولات، خدمات، دپارتمان و پروژه‌ها</p>
             <p>مدت زمان انجام پروژه: 34 روز کاری</p>
-            <a href="https://hbscoo.com/">مشاهده پروژه</a>
+          <!-- From Uiverse.io by cssbuttons-io --> 
+
+<form action="https://hbscoo.com/">
+    <button>
+مشاهده پروژه
+  <span class="transition"></span>
+  <span class="gradient"></span>
+  <span class="label"></span>
+
+</button>
+</form>
+
         </div>
     </section>
 </body>
